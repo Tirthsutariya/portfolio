@@ -1,0 +1,20 @@
+# ── Build output ──
+backend/target/
+target/
+*.class
+
+# ── Secrets / local config ──
+.env
+*.env
+**/application-local.properties
+
+# ── OS / editor ──
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
+.claude/
+
+# ── Node (if ever added) ──
+node_modules/

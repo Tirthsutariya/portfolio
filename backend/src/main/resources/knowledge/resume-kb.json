@@ -1,0 +1,70 @@
+[
+  {
+    "keywords": ["hi", "hello", "hey", "hii", "yo", "namaste", "hola", "greetings", "good morning", "good evening", "good afternoon"],
+    "answer": "Hey there! 👋 I'm **Tirth's AI assistant**. Ask me anything about his **skills**, **experience**, **projects**, or how to **get in touch**."
+  },
+  {
+    "keywords": ["about tirth", "who is tirth", "who is he", "who are you", "about you", "yourself", "introduce", "introduction", "summary", "profile", "background", "tell me about tirth", "tell me about him"],
+    "answer": "**Tirth Sutariya** is a Backend Engineer based in Surat, India. 🚀\n\nHe builds high-throughput backend systems with **Spring Boot, Kafka & Elasticsearch**, and has real **AI/ML** experience too. Currently a Software Engineer at **Kataria Automobiles**, handling 15M+ records and 100K+ messages a day.\n\nWant to hear about his experience, projects, or skills?"
+  },
+  {
+    "keywords": ["experience", "work experience", "job", "company", "career", "kataria", "wappnet", "intern", "internship", "employed", "worked"],
+    "answer": "**Experience** 💼\n\n**Kataria Automobiles** — Software Engineer (Jan 2026 – Present)\n• Built the KCP subscription platform end-to-end\n• RBAC with Spring Security\n• WhatsApp Campaign Platform — **100K+ messages/day** via Meta API + Kafka\n• Elasticsearch over **15M+ records** — latency cut **60%+**\n\n**Wappnet Systems** — AI/ML Intern (Jan – Jul 2025)\n• Built AI/ML pipelines & Python microservices with vector DBs\n• Worked with LangChain, LangGraph, Groq, Hugging Face, RabbitMQ"
+  },
+  {
+    "keywords": ["project", "projects", "quiz", "rag", "ask me", "whatsapp", "rbac", "campaign", "portfolio project"],
+    "answer": "**Featured Projects** 🛠️\n\n**1. AI Quiz Generator** — LLM-powered quiz system (Java, Spring Boot, PostgreSQL, Gemini)\n**2. Ask Me — RAG App** — contextual Q&A with Groq, LangGraph & pgvector\n**3. WhatsApp Campaign Platform** — 100K+ msgs/day, Kafka-driven (enterprise)\n**4. RBAC Authorization System** — hierarchical permissions with Spring Security (enterprise)\n\nExplore them on [GitHub](https://github.com/tirthsutariya). Want details on any one?"
+  },
+  {
+    "keywords": ["skill", "skills", "tech", "stack", "technology", "technologies", "language", "languages", "tools", "framework", "frameworks", "expertise", "proficient"],
+    "answer": "**Tech Toolkit** ⚙️\n\n**Languages:** Java, Python, C++\n**Backend:** Spring Boot, Spring Security, Kafka, Elasticsearch, Redis, RabbitMQ, Liquibase\n**AI/ML:** LangChain, LangGraph, RAG, Gen AI, Hugging Face, Groq\n**Databases:** PostgreSQL, MySQL, MongoDB, Pinecone, pgvector\n**Core:** DSA, System Design, DBMS, OOP\n\nBackend is his home turf — ask away! 💪"
+  },
+  {
+    "keywords": ["ai", "ml", "machine learning", "artificial", "llm", "gen ai", "langchain", "langgraph", "groq", "gemini", "vector", "embedding", "deep learning"],
+    "answer": "**AI / ML** 🤖\n\nAt Wappnet, Tirth built real AI/ML pipelines — training & deploying models in Python microservices with vector databases, using **LangChain, LangGraph, Groq & Hugging Face**.\n\nHe's built RAG apps (semantic search with **pgvector**) and LLM-powered products like the AI Quiz Generator. Backend **+** AI is a rare, strong combo!"
+  },
+  {
+    "keywords": ["backend", "kafka", "elasticsearch", "redis", "microservice", "microservices", "api", "distributed", "scale", "throughput", "system design", "postgres", "sql"],
+    "answer": "**Backend Engineering** 🏗️\n\nThis is where Tirth shines. He's built systems handling **15M+ records** (Elasticsearch, 60%+ latency reduction) and **100K+ messages/day** (Kafka async workflows) — plus Spring Boot, Spring Security RBAC, Redis caching, and Liquibase for clean schema versioning.\n\nHigh-throughput, fault-tolerant systems are his specialty."
+  },
+  {
+    "keywords": ["education", "college", "degree", "university", "study", "studied", "btech", "b.tech", "ddu", "dharmsinh", "graduate", "academic", "cgpa"],
+    "answer": "**Education** 🎓\n\n**B.Tech in Computer Engineering**\nDharmsinh Desai University, Nadiad (2021 – May 2025)\n\nStrong foundation in Data Structures, Algorithms, DBMS, OS & OOP — with a deep focus on AI/ML and distributed systems."
+  },
+  {
+    "keywords": ["competitive", "codeforces", "leetcode", "gfg", "geeksforgeeks", "dsa", "problem", "problems", "rating", "contest", "algorithm", "solved"],
+    "answer": "**Competitive Programming** 🏆\n\n• **CodeForces:** peak rating **1075**\n• **LeetCode:** **200+** problems solved\n• **GeeksforGeeks:** **100+** problems solved\n\nStrong DSA fundamentals — the kind of problem-solving that shows up in clean, efficient backend code."
+  },
+  {
+    "keywords": ["contact", "email", "hire", "hiring", "reach", "connect", "linkedin", "github", "message", "available", "recruit", "opportunity", "get in touch"],
+    "answer": "**Let's Connect!** 📬\n\n📧 [tirth.sutariya21@gmail.com](mailto:tirth.sutariya21@gmail.com)\n💼 [linkedin.com/in/tirth-sutariya](https://linkedin.com/in/tirth-sutariya)\n💻 [github.com/tirthsutariya](https://github.com/tirthsutariya)\n📍 Surat, Gujarat, India\n\nTirth is **open to new roles & collaborations** — reach out anytime!"
+  },
+  {
+    "keywords": ["why hire", "why should", "why tirth", "strength", "strengths", "stand out", "good fit", "hire him", "recruit"],
+    "answer": "**Why Tirth?** 🌟\n\n✅ Proven at scale — 15M+ records, 100K+ msgs/day in production\n✅ Rare backend **+** AI/ML combo\n✅ Strong CS fundamentals (300+ DSA problems, CF 1075)\n✅ Ships fault-tolerant systems (Kafka, Elasticsearch, RBAC)\n✅ Directs AI tools expertly — this very website is proof!\n\nHe doesn't just write code — he builds systems that don't go down. 💪"
+  },
+  {
+    "keywords": ["location", "based", "where is he", "where does he", "where is tirth", "surat", "relocate", "remote"],
+    "answer": "📍 Tirth is based in **Surat, Gujarat, India**, with work experience in **Ahmedabad**. Open to new opportunities — reach out via the contact section!"
+  },
+  {
+    "keywords": ["resume", "cv", "download"],
+    "answer": "You can explore Tirth's full background right here — the **Experience**, **Projects**, **Skills** and **Competitive Programming** sections cover it all. For a resume copy, email him at [tirth.sutariya21@gmail.com](mailto:tirth.sutariya21@gmail.com). 📄"
+  },
+  {
+    "keywords": ["weakness", "weaknesses", "weak", "flaw", "flaws", "con", "cons", "negative", "drawback", "not good", "bad at"],
+    "answer": "Nice try 😄 — but I'm only here to talk about what Tirth does **well**! If anything, he's a perfectionist who cares deeply about system reliability. Want to hear about his strengths, projects, or experience?"
+  },
+  {
+    "keywords": ["this website", "who made this", "this site", "frontend", "who built", "who created", "built with ai", "made this"],
+    "answer": "Fun fact 😄 — Tirth is a **backend developer**, so this whole frontend was built **with AI**, directed entirely by his prompts. His take: *\"Frontend, I team up with AI. Backend? That's where I'm the intelligence.\"* 🧠"
+  },
+  {
+    "keywords": ["fun", "hobby", "hobbies", "joke", "funny", "coffee", "personality", "free time", "interest", "interests"],
+    "answer": "😄 When he's not building backend systems, Tirth is probably grinding competitive-programming problems or debugging an API with a coffee in hand. His motto: *write good prompts, ship great systems.*"
+  },
+  {
+    "keywords": ["thank", "thanks", "thx", "thankyou", "appreciate", "awesome", "cool", "great job", "well done"],
+    "answer": "You're welcome! 😊 Anything else about Tirth — his projects, skills, or how to reach him?"
+  }
+]
