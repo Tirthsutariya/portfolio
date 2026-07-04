@@ -34,14 +34,14 @@
         elOnline.textContent = s.online;
         elStatus.textContent = 'UP';
         if (elDot) elDot.style.background = '';
-        note.textContent = `API latency ${latency}ms · uptime ${fmtUptime(st.uptimeSeconds)} · Spring Boot on :8090`;
+        note.textContent = `API latency ${latency}ms · uptime ${fmtUptime(st.uptimeSeconds)} · Backend online`;
       } catch (e) {
         elVisits.textContent = '—';
         elUnique.textContent = '—';
         elOnline.textContent = '—';
         elStatus.textContent = 'OFFLINE';
         if (elDot) elDot.style.background = 'var(--txt3)';
-        note.textContent = 'Backend offline — start it with:  mvn spring-boot:run';
+        note.textContent = 'Backend offline · waking up (free tier sleeps after 15 min idle)';
       }
     }
 
