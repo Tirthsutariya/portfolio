@@ -64,11 +64,23 @@ gh repo create tirth-portfolio --public --source=. --push
 
 ## Local development
 
-```bash
-# backend
-cd backend && mvn spring-boot:run          # http://localhost:8090
+1. **Set your secrets:**
+   ```bash
+   cp .env.example .env
+   # Edit .env: paste your GROQ_API_KEY (required), optional MAIL_USER/MAIL_PASS
+   ```
 
-# frontend
-# open index.html, or:  python -m http.server 3399
-```
-`js/config.js` auto-uses `localhost:8090` when running locally.
+2. **Run the backend:**
+   ```bash
+   cd backend && mvn spring-boot:run          # http://localhost:8090
+   ```
+
+3. **Run the frontend:**
+   ```bash
+   # Option A: open index.html in a browser
+   # Option B: python -m http.server 3399, then http://localhost:3399
+   ```
+
+`js/config.js` auto-detects localhost and uses `http://localhost:8090/api` for all calls.
+
+> ✅ `.env` is git-ignored — secrets never commit. On Render, you'll paste them into the dashboard's **Environment** section instead.
