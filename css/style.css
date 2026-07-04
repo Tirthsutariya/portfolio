@@ -4,7 +4,7 @@
 
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: clip; }
 body {
   font-family: 'Space Grotesk', sans-serif;
   background: #080808;
@@ -153,7 +153,8 @@ body.light .nav-btn:hover{ background: #111; color: #fff !important; }
   border-radius: 50px;
   padding: 12px 24px;
   font-size: 0.88rem; font-weight: 500; color: var(--txt);
-  white-space: nowrap;
+  max-width: min(440px, calc(100vw - 32px));
+  text-align: center; line-height: 1.4;
   z-index: 9999;
   opacity: 0;
   pointer-events: none;
@@ -244,9 +245,31 @@ body.cbot-open .cbot-panel { opacity: 1; transform: translateY(0) scale(1); poin
 .cbot-input button { width: 40px; height: 40px; border-radius: 50%; background: var(--acc); color: var(--bg); border: none; cursor: pointer; display: grid; place-items: center; flex-shrink: 0; }
 .cbot-input button svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
-@media (max-width: 480px) {
-  .cbot-panel { right: 8px; left: 8px; width: auto; bottom: 84px; height: 72vh; }
-  .cbot-fab { right: 16px; bottom: 16px; }
+@media (max-width: 600px) {
+  /* Floating button — comfortable tap target, clears the notch/home bar */
+  .cbot-fab {
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    width: 54px; height: 54px;
+  }
+  .cbot-fab svg { width: 24px; height: 24px; }
+
+  /* Panel becomes a near-fullscreen sheet using the real available space.
+     top+bottom+left+right auto-size it to every screen; FAB stays tappable below. */
+  .cbot-panel {
+    top: max(12px, env(safe-area-inset-top, 0px));
+    bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+    left: 10px; right: 10px;
+    width: auto; height: auto;
+    max-width: none; max-height: none;
+    border-radius: 16px;
+  }
+  .cbot-head { padding: 14px; }
+  .cbot-body { padding: 14px; gap: 10px; }
+  .cbot-msg { max-width: 92%; }
+  .cbot-sug { font-size: 0.78rem; }
+  /* 16px prevents iOS from auto-zooming the whole page when the input is focused */
+  .cbot-input input { font-size: 16px; }
 }
 
 /* ══════════ WHATSAPP FLOATING BUTTON ══════════ */
@@ -267,8 +290,13 @@ body.cbot-open .cbot-panel { opacity: 1; transform: translateY(0) scale(1); poin
   opacity: 0; pointer-events: none; transform: translateX(-6px); transition: all 0.25s;
 }
 .wa-float:hover .wa-tip { opacity: 1; transform: translateX(0); }
-@media (max-width: 480px) {
-  .wa-float { left: 16px; bottom: 16px; width: 50px; height: 50px; }
+@media (max-width: 600px) {
+  .wa-float {
+    left: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    width: 54px; height: 54px;
+  }
+  .wa-float svg { width: 26px; height: 26px; }
   .wa-tip { display: none; }
 }
 
@@ -1089,7 +1117,39 @@ body.light .s-anim { opacity: 0.07; }
 @media (max-width: 600px) {
   .hero-h    { letter-spacing: -2px; }
   .container { padding: 0 20px; }
-  .s-sect    { padding: 80px 0; }
+  .s-sect    { padding: 72px 0; }
+  .sh        { margin-bottom: 44px; }
+  .sh-sub    { font-size: 0.98rem; }
   .stat-grid { grid-template-columns: 1fr 1fr; }
-  .hero-btns { flex-direction: column; }
+
+  /* Buttons stack full-width so they're easy to tap */
+  .hero-btns { flex-direction: column; width: 100%; }
+  .hero-btns .btn-p, .hero-btns .btn-s { width: 100%; text-align: center; }
+
+  /* Cards + photo tightened for small screens */
+  .witty-card { padding: 20px 18px; }
+  .wc-power   { padding: 12px 14px; font-size: 0.92rem; }
+  .hero-photo { width: 150px; height: 150px; }
+  .hero-photo img, .hp-fallback { width: 132px; height: 132px; }
+
+  /* Theme toast: wrap the funny line + sit above the floating buttons */
+  .theme-toast {
+    left: 16px; right: 16px; bottom: calc(104px + env(safe-area-inset-bottom, 0px));
+    max-width: none; transform: translateY(20px);
+  }
+  .theme-toast.show { transform: translateY(0); }
+}
+
+@media (max-width: 380px) {
+  .hero-h    { font-size: 2.9rem; letter-spacing: -1.5px; }
+  .stat-grid { grid-template-columns: 1fr; }
+  .hero-soc  { gap: 8px; }
+  .sp        { padding: 7px 14px; font-size: 0.78rem; }
+}
+
+/* On phones & tablets, reveal elements vertically — horizontal slide-ins
+   (translateX) poke past the screen edge and cause sideways overflow. */
+@media (max-width: 900px) {
+  .tx-left, .tx-right { transform: translateY(50px); }
+  .tx-left.in, .tx-right.in { transform: translate(0, 0); }
 }
